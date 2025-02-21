@@ -6,3 +6,4 @@ for num in range(1, 101):
 for num in range(1, 101):
     if num % 5 == 0:  # 5-д хуваагдах эсэхийг шалгаж буй
         print(f"Current number is {num}")
+# Daalgavar3 Datetime
