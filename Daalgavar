@@ -6,4 +6,10 @@ for num in range(1, 101):
 for num in range(1, 101):
     if num % 5 == 0:  # 5-д хуваагдах эсэхийг шалгаж буй
         print(f"Current number is {num}")
+
 # Daalgavar3 Datetime
+
+from datetime import datetime
+datetime_string="2024/12/15"
+datetime_object=datetime.strptime(datetime_string, "%Y/%m/%d")
+print(datetime_object)
