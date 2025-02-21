@@ -52,10 +52,14 @@ for A in A_values:
 #Даалгавар 5 dictionary
 
 # Нэгэн хүний нэр, хүйс, цалин, төрсөн он сар өдөр бүхий dictionary үүсгэнэ үү. 
-person = {
-    "name": "Nomko",
-    "gender": "emegtei",
-    "salary": 5000,
-    "birthdate": "1999-10-24"
-}
+person = {"name": "Nomko", "gender": "emegtei", "salary": 5000, "birthdate": "1999-10-24"}
 print(person)   
+
+#Дахин нэмж 4 хүн дээр үүсгэнэ үү.
+
+person2 = {"name": "Duuriimaa", "gender": "emegtei", "salary": 200, "birthdate": "1989-10-10"}
+person3 ={"name": "Dariimaa","gender": "emegtei", "salary": 5000, "birthdate": "1979-11-11" }
+person4 ={"name": "Jinjiimaa", "gender": "emegtei", "salary": 3000, "birthdate": "1969-11-11"}
+person5 ={"name": "Baldan","gender": "eregtei", "salary": 300, "birthdate": "1959-11-11"}
+people=[person, person2, person3, person4, person5]
+    print(people)
