@@ -9,11 +9,20 @@ for num in range(1, 101):
 
 # Daalgavar3 Datetime
 
+#String хэлбэрээс Datetime хэлбэрт оруулах
+
 from datetime import datetime
 datetime_string="2024/12/15"
 datetime_object=datetime.strptime(datetime_string, "%Y/%m/%d")
 print(datetime_object)
 
+#7 хоног нэмэх 
+
 from datetime import datetime, timedelta
 new_date=datetime_object + timedelta(days=7)
 print(new_date)
+
+#Огноог өөр формат руу оруулах
+
+newformat_date = new_date.strftime("%B %d, %Y")
+print  (newformat_date)
