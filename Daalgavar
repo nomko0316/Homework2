@@ -13,3 +13,7 @@ from datetime import datetime
 datetime_string="2024/12/15"
 datetime_object=datetime.strptime(datetime_string, "%Y/%m/%d")
 print(datetime_object)
+
+from datetime import datetime, timedelta
+new_date=datetime_object + timedelta(days=7)
+print(new_date)
