@@ -1,4 +1,5 @@
-#if loop
+#Даалгавар 2 if, loop 
+
 for i in range(1, 101):
     print(i)
 for num in range(1, 101):
@@ -7,22 +8,31 @@ for num in range(1, 101):
     if num % 5 == 0:  # 5-д хуваагдах эсэхийг шалгаж буй
         print(f"Current number is {num}")
 
-# Daalgavar3 Datetime
+#Даалгавар 3 Datetime
 
-#String хэлбэрээс Datetime хэлбэрт оруулах
+    #String хэлбэрээс Datetime хэлбэрт оруулах
 
 from datetime import datetime
 datetime_string="2024/12/15"
 datetime_object=datetime.strptime(datetime_string, "%Y/%m/%d")
 print(datetime_object)
 
-#7 хоног нэмэх 
+    #7 хоног нэмэх 
 
 from datetime import datetime, timedelta
 new_date=datetime_object + timedelta(days=7)
 print(new_date)
 
-#Огноог өөр формат руу оруулах
+    #Огноог өөр формат руу оруулах
 
 newformat_date = new_date.strftime("%B %d, %Y")
 print  (newformat_date)
+
+#Даалгавар 4 numpy
+
+# F=A*(K^0.3)*(L^0.7) хэлбэртэй A, K, L хувьсагч авах функц үүсгэнэ үү.
+
+import numpy as np
+def calculate_F(A, K, L):
+    F = A * (np.power(K, 0.3)) * (np.power(L, 0.7))
+    return F
