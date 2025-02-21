@@ -48,3 +48,14 @@ for A in A_values:
         for L in L_values: # давталт
             F = calculate_F(A, K, L) # A, K, L хувьсагчдын утгаар F-ийг тооцоолно.
             print(f"A = {A}, K = {K}, L = {L} => F = {F}")
+
+#Даалгавар 5 dictionary
+
+# Нэгэн хүний нэр, хүйс, цалин, төрсөн он сар өдөр бүхий dictionary үүсгэнэ үү. 
+person = {
+    "name": "Nomko",
+    "gender": "emegtei",
+    "salary": 5000,
+    "birthdate": "1999-10-24"
+}
+print(person)   
