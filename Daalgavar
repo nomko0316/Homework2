@@ -30,9 +30,21 @@ print  (newformat_date)
 
 #Даалгавар 4 numpy
 
-# F=A*(K^0.3)*(L^0.7) хэлбэртэй A, K, L хувьсагч авах функц үүсгэнэ үү.
+#Функц үүсгэх
 
 import numpy as np
 def calculate_F(A, K, L):
     F = A * (np.power(K, 0.3)) * (np.power(L, 0.7))
     return F
+
+# 1-10 хооронд 0.1-ийн алхамтай утгуудыг оноох
+A_values = np.arange(1, 10.1, 0.1) # 1-ээс 10 хүртэлх 0.1-ийн алхамтай утгуудыг үүсгэнэ.
+K_values = np.arange(1, 10.1, 0.1)
+L_values = np.arange(1, 10.1, 0.1)
+
+#Функцийн утгуудыг хэвлэх
+for A in A_values:
+    for K in K_values:
+        for L in L_values: # давталт
+            F = calculate_F(A, K, L) # A, K, L хувьсагчдын утгаар F-ийг тооцоолно.
+            print(f"A = {A}, K = {K}, L = {L} => F = {F}")
