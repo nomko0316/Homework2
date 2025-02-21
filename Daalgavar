@@ -63,3 +63,7 @@ person4 ={"name": "Jinjiimaa", "gender": "emegtei", "salary": 3000, "birthdate":
 person5 ={"name": "Baldan","gender": "eregtei", "salary": 300, "birthdate": "1959-11-11"}
 people=[person, person2, person3, person4, person5]
     print(people)
+
+import pandas as pd 
+df = pd.DataFrame(people)
+print(df)
